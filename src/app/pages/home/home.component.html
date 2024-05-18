@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="top">
+        <p class="title">Project Calendar</p>
+        <p class="typeOfProject">Shared Project</p>
+    </div>
+    <app-navbar></app-navbar>
+    <div class="gridContainer">
+        <div *ngFor="let dateInfo of dates" class="columnContainer">
+            <app-column [tasks]="getColumnData(dateInfo)" [date]="dateInfo.date"></app-column>
+          </div>
+          
+    </div>
+</div>

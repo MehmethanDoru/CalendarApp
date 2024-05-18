@@ -1,0 +1,59 @@
+<div class="navbarContainer">
+    <div class="leftPart">
+        <app-search-bar></app-search-bar>
+        <app-users></app-users>
+        <div class="dateRange">
+            <img src="../../../assets/icons/date.svg" alt="">
+            <p>08/10/23 - 11/12/23</p>
+        </div>
+        <!-- Dropdown Menu Start -->
+        <div class="dropdown-container">
+            <button class="dropdown-toggle">
+                Departments
+                <div class="dropdown-menu">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+            </button>
+            <img src="../../../assets/icons/dropdown-icon.svg" alt="">
+        </div>
+        <div class="dropdown-container">
+            <button class="dropdown-toggle">
+                Labels
+                <div class="dropdown-menu">
+                    <a href="#">Opt. 1</a>
+                    <a href="#">Opt. 2</a>
+                    <a href="#">Opt. 3</a>
+                </div>
+            </button>
+            <img src="../../../assets/icons/dropdown-icon.svg" alt="">
+        </div>
+        <!-- Dropdown Menu End -->
+    </div>
+
+    <div class="rightPart">
+        <button class="createTask" (click)="createTask()">
+            <img src="../../../assets/icons/create-icon.svg" alt="">
+            <p>Create Task</p>
+        </button>
+        <button class="actionButton">
+            <img src="../../../assets/icons/stats-icon.svg" alt="">
+            <p>View Stats</p>
+        </button>
+        <button class="actionButton">
+            <img src="../../../assets/icons/arrange-icon.svg" alt="">
+            <p>Auto Arrange</p>
+        </button>
+        <button class="actionButton">
+            <img src="../../../assets/icons/share-icon.svg" alt="">
+            <p>Share</p>
+        </button>
+        <button class="actionButton">
+            <img src="../../../assets/icons/export-icon.svg" alt="">
+            <p>Export</p>
+        </button>
+
+    </div>
+</div>
+<app-create-task *ngIf="isCreateTaskVisible" class="createTaskDiv"></app-create-task>

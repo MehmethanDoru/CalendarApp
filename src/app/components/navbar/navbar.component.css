@@ -1,0 +1,131 @@
+.navbarContainer {
+    display: flex;
+    align-items: center;
+}
+
+.leftPart {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.rightPart {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 7px;
+}
+
+.rightPart button:first-of-type {
+    margin-left: 58px;
+}
+
+.dateRange {
+    display: flex;
+    padding: 0px 6px;
+    align-items: center;
+    gap: 7px;
+    border-radius: 4px;
+    background: #F5F5F5;
+}
+
+.dateRange p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dateRange img {
+    background: #F5F5F5;
+    width: 12px;
+    height: 12px;
+}
+
+/* Dropdown Menu Start */
+.dropdown-container {
+    display: flex;
+    padding: 4px 2px;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    color: #000000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-toggle:focus .dropdown-menu {
+    display: block;
+}
+
+.dropdown-container img {
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+}
+/* Dropdown Menu End */
+
+.createTask {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    border-radius: 4px;
+    background: #F05251;
+    color: #fff;
+    border: none;
+}
+
+.createTask img {
+    width: 17px;
+    height: 17px;
+}
+
+.actionButton {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    background: transparent;
+    border: none;
+}
+
+.actionButton img {
+    width: 17px;
+    height: 17px;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 1920px) {
+    .rightPart button:first-of-type {
+        margin-left: 280px;
+    }
+
+    .rightPart {
+        gap: 30px;
+    }
+}

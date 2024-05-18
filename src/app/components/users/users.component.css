@@ -1,0 +1,30 @@
+.userContainer {
+    display: flex;
+    align-items: flex;
+    /* gap: -50px; */
+}
+
+.moreUsers {
+    display: inline-flex;
+    background-color: #D9D9D9;
+}
+
+.moreUsers p {
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    margin-left: 9px;
+}
+
+.userContainer img,
+.moreUsers {
+    margin-right: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.userContainer img:last-child {
+    margin-right: 0;
+}

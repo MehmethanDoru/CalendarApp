@@ -1,0 +1,74 @@
+    /* 1 kutu + 1 bosluk = 152px */
+    .flagContainer {
+        width: 304px;
+        border: 2px solid #fff;
+        background-color: #F8D2BD;
+        border-radius: 5px;
+    }
+
+    /* TOP */
+    .progress-loader {
+        width: 110px;
+        background: #fff;
+        height: 7px;
+        border-radius: 7px;
+        margin: 10px;
+    }
+
+    .progress {
+        width: 68px;
+        height: 7px;
+        border-radius: 7px;
+        background: #AC450B;
+    }
+
+    .right img {
+        width: 18px;
+        height: 18px;
+        color: #AC450B;
+        background-color: #fff;
+        fill: aliceblue;
+    }
+
+    #Flag-Icon-Set {
+        fill: #AC450B66;
+    }
+
+    #threedot {
+        fill: #AC450B;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        display: flex;
+        padding: 5px;
+        justify-content: end;
+    }
+
+    /* TITLE */
+
+    .title {
+        margin: 0px 10px 10px 10px;
+        color: #AC450B;
+        font-size: 14px;
+    }
+
+    /* INFO */
+
+    .info {
+        margin: 0px 10px 10px 10px;
+    }
+
+    .timeInfo {
+        color: #AC450B;
+        font-size: 14px;
+    }
+
+    .right img {
+        margin-top: 10px;
+        border-radius: 50%;
+        margin-left: -5px;
+    }

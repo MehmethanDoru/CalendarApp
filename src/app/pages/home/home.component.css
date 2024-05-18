@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+.container {
+    margin: 48px 25px 0 25px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    width: 1465px;
+    overflow-y: hidden;
+    /* overflow-x: hidden; */
+    overflow: hidden;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+
+.title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.typeOfProject {
+    font-size: 12px;
+    color: #6B6B6B;
+    font-weight: 400;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+
+/* Grid */
+.gridContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 105px;
+    padding: 20px;
+}
+
+.columnContainer p {
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+.item {
+    width: 50px;
+    height: 960px;
+    background-color: #F3F3F3;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.gridContainer .item:first-of-type {
+    margin-left: -20px;
+}

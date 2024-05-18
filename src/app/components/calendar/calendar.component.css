@@ -1,0 +1,109 @@
+.calendarContainer {
+    width: 310px;
+    height: 330px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 5px 2px 23px 5px #EDEDED;
+}
+
+.cont {
+    margin: 30px;
+}
+
+.left {
+    float: left;
+    margin-left: 3px;
+}
+
+/* BUTTON */
+
+.right {
+    display: flex;
+    padding: 5px;
+    justify-content: flex-end;
+    margin-right: 3px;
+}
+
+.right button {
+    margin-top: -9px;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.right button:last-of-type {
+    margin-right: 0px;
+}
+
+.leftButton {
+    background-image: url(../../../assets/icons/left.svg);
+}
+
+.rightButton {
+    background-image: url(../../../assets/icons/right.svg);
+}
+
+/* Days Of Week */
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.calendarHeader th {
+    padding: 15px 10px 4px 0px;
+    color: #34485E89;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.calendarHeader th:last-of-type {
+    padding-right: 0px;
+}
+
+/* Days */
+
+.dateButton.outside-month {
+    color: #34485E89;
+}
+
+.day {
+    width: 30px;
+    height: 35px;     
+}
+
+.dateButton {
+    color: #06263D;   
+    outline: none;   
+    background-color: transparent;
+    border: none;
+    font-family: Montserrat;    
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.range-background {
+    background-color: #f5d8dd;
+    color: white;
+}
+
+.start-background {
+    background-color: #f5d8dd;
+    border-radius: 50% 0 0 50%;
+}
+
+.end-background {
+    background-color: #f5d8dd;
+    border-radius: 0 50% 50% 0;
+}
+
+.select-background {
+    background-color: #f5645e;
+    color: #fff;
+    border-radius: 50px;
+}

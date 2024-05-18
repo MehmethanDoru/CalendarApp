@@ -1,0 +1,40 @@
+<div class="calendarContainer">
+    <div class="cont">
+        <div class="top">
+            <div class="left">
+                {{ currentMonth.format('MMMM YYYY') }}
+            </div>
+            <div class="right">
+                <button (click)="prevMonth()" class="leftButton"></button>
+                <button (click)="nextMonth()" class="rightButton"></button>
+            </div>
+        </div>
+        <div class="bottom">
+            <table>
+                <thead class="calendarHeader">
+                    <tr>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>T</th>
+                        <th>W</th>
+                        <th>T</th>
+                        <th>F</th>
+                        <th>S</th>
+                    </tr>
+                    <tr></tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let weeksArray of weeksInMonthArray">
+                        <td *ngFor="let day of weeksArray" class="day"
+                            [ngClass]="{'range-background': isDateInRange(day), 'start-background': isDateInStart(day), 'end-background': isDateInEnd(day)}">
+                            <button class="dateButton" [class.outside-month]="!isDayInCurrentMonth(day)"
+                                [ngClass]="{'select-background': isDateSelect(day)}" (click)="setDate(day)">
+                                {{ day.format('D') }}
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

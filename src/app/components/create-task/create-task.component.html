@@ -1,0 +1,25 @@
+<div class="createTask" id="createTaskContainer">
+    <div class="input-container">
+        <input type="text" id="inputName" required="">
+        <label for="inputName" class="label">Task Name</label>
+        <div class="underline"></div>
+    </div>
+
+    <div class="input-container">
+        <input type="text" id="inputDesc" required="">
+        <label for="inputDesc" class="label">Task Description</label>
+        <div class="underline"></div>
+    </div>
+    <div class="input-container">
+        <input type="text" id="inputDateRange" required="" (click)="openCalendar()">
+        <label for="inputDateRange" class="label">Date Range</label>
+        <div class="underline"></div>
+    </div>
+
+    <div class="calendarContainer">
+        <app-calendar *ngIf="isCalendarOpen"></app-calendar>
+    </div>
+    
+    <button class="createTaskButton" (click)="createTask()">Create Task</button>
+
+</div>

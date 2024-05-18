@@ -1,0 +1,6 @@
+<div class="columnContainer">
+    <p>{{ date.format('L') }}</p>
+    <div class="column">
+        <app-item *ngFor="let task of tasks" [task]="task" [isCurrent]="date.isSame(task.create_date, 'day')"></app-item>
+    </div>
+</div>
